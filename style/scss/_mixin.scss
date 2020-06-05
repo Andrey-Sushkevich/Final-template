@@ -1,0 +1,36 @@
+@mixin item{
+    width: 33.33%;
+    height: calc(60px + 0.6em);
+    padding: 0;
+    border: 0.5px solid #F1F1F1;
+    &:hover{
+        background-color: rgb(155, 153, 255);
+    } 
+}
+@mixin box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+ 
+}
+   
+@mixin circle{
+  width:1.1vw;
+  height: 1.1vw;
+  border-radius: 50%;
+  border:1px solid rgb(211, 207, 207);
+  &:hover{
+    background-color: rgb(70, 2, 11); 
+  }
+}
+@mixin asideButton{
+  position: relative;
+  width: 33.33%;
+  height: calc(40px + 0.6em);
+  background-color: rgb(250, 131, 147);
+  border: none;     
+  &:hover{
+     background-color: rgb(70, 2, 11);  
+  }
+}     
