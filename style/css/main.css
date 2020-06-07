@@ -110,7 +110,7 @@ body {
   padding-top: 2vw;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 767px) {
   .navigation {
     display: none;
   }
@@ -418,7 +418,7 @@ header {
   font-size: calc( 8px + 0.3vw);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .statistics {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -454,6 +454,9 @@ main {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -477,6 +480,7 @@ main {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
+    margin: 0 auto;
   }
 }
 
@@ -496,10 +500,6 @@ main {
     display: -ms-flexbox;
     display: flex;
     border: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -611,7 +611,7 @@ main {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -675,17 +675,10 @@ main {
     display: -ms-flexbox;
     display: flex;
     border: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
             order: 5;
     width: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
@@ -788,14 +781,13 @@ main {
     display: -ms-flexbox;
     display: flex;
     border: none;
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-ordinal-group: 9;
-        -ms-flex-order: 8;
-            order: 8;
-    width: 90%;
   }
 }
 
@@ -822,14 +814,10 @@ main {
     display: -ms-flexbox;
     display: flex;
     border: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-ordinal-group: 10;
         -ms-flex-order: 9;
             order: 9;
-    width: 100%;
+    width: 170%;
   }
 }
 
@@ -902,6 +890,7 @@ main {
         -ms-flex-order: 10;
             order: 10;
     width: 100%;
+    margin: auto;
   }
 }
 
@@ -924,7 +913,11 @@ main {
 
 @media screen and (max-width: 767px) {
   .main-bottom-right-bottom .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     border: none;
+    width: 80%;
   }
 }
 
@@ -949,20 +942,6 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  align-items: center;
-}
-
-.right .www {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .right p {
@@ -999,7 +978,7 @@ main {
     -webkit-box-ordinal-group: 12;
         -ms-flex-order: 11;
             order: 11;
-    width: 90%;
+    width: 80%;
     margin: auto;
   }
 }
@@ -1060,14 +1039,13 @@ main {
   list-style-type: none;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 767px) {
   .aside-main ul {
     width: 100%;
   }
 }
 
 .aside-main li {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1077,17 +1055,17 @@ main {
   border-bottom: 1px solid #c7c7c7;
 }
 
-.aside-main li p {
+.aside-main p {
   font-size: calc(9px + 0.3vw);
   margin-left: 1vw;
 }
 
-.aside-main li span {
+.aside-main span {
   font-size: calc(6px + 0.3vw);
   margin-left: 1vw;
 }
 
-.aside-main li button {
+.aside-main button {
   width: 1.4vw;
   height: 1.1vw;
   margin-left: 4.5vw;
@@ -1152,10 +1130,14 @@ main {
   padding-right: 1vw;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 767px) {
   .aside-footer li {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+}
+
+.company-first {
+  background: url(../../img/aside/link-1.png) center center no repeat;
 }
 /*# sourceMappingURL=main.css.map */
