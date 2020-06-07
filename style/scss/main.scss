@@ -53,7 +53,7 @@ margin: 0 auto;
         padding-top: 2vw;
     }
 }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 767px) {
            display: none;
 
     } 
@@ -251,7 +251,7 @@ form{
 }
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
     .statistics{
         display: flex;
         justify-content: space-between;
@@ -283,8 +283,7 @@ main{
         border:none;
         flex-direction: column;
         order:-1;
-    }
-       
+    }  
 }
 
 .main-top{
@@ -295,9 +294,10 @@ main{
         flex-wrap: wrap;
         display: flex;
         border:none;
-        flex-direction: column;
         order:1;
         width:100%;
+        margin-left:50px;
+       
     }
    
 }
@@ -398,10 +398,8 @@ main{
     flex-wrap: wrap;
     display: flex;
     border:none;
-    flex-direction: column;
     order:5;
     width:100%;
-    align-items: center;
 }
    h4{
        padding:30px 0px 39px 31px;
@@ -411,10 +409,10 @@ main{
 .Turner{
     width:100%;
     flex-direction: column;
-   
     
     .Turner-first{
         display: flex;
+      
         img{
             padding-left:2.1vw;
             padding-right:1.4vw;
@@ -468,10 +466,6 @@ main{
     }
 }
 
-    
-
-
-
 .main-bottom-right{
     width:50%;
     display:flex;
@@ -482,13 +476,10 @@ main{
         flex-wrap: wrap;
         display: flex;
         border:none;
-        flex-direction: column;
         order:8;
-        width:90%;
-    }
-   
+        width:100%;
+    }  
 }
-
 
 .main-bottom-right-top{
         width: 100%;
@@ -500,11 +491,9 @@ main{
             flex-wrap: wrap;
             display: flex;
             border:none;
-            flex-direction: column;
             order:9;
             width:100%;
         }
-
         .Task{
             h4{
                 margin-left:1vw;
@@ -525,25 +514,21 @@ main{
                 justify-content: space-around;
                 position: relative;
                 }     
-            
-        
-                p {
+            p {
                     margin: 0;
                     font-weight: 400;
                     font-size: calc(8px + 0.3vw);
                     color: #BFBFBF;
                     font-family: 'lato';
-                 
-                    }
-                h5{
-                    
-                        font-size: calc(8px + 0.3vw);
-                        font-weight: 400;
-                        color:#FD566F;
-                        font-family: 'lato';
-                       
                 }
-                span{
+            h5{
+                    
+                    font-size: calc(8px + 0.3vw);
+                    font-weight: 400;
+                    color:#FD566F;
+                     font-family: 'lato';
+                }
+            span{
                     color:#9C9C9C;
                     font-size: calc(8px + 0.3vw);
                     font-family: 'lato';
@@ -554,15 +539,12 @@ main{
         }
 }
 
-
 .main-bottom-right-bottom{
     width: 100%;
     display:flex;
     @media screen and (max-width:767px){
-    
         display: flex;
         border:none;
-       
         order:10;
         width:100%;
     }
@@ -570,9 +552,7 @@ main{
      width: 50%;
      border-right: 19px  solid gainsboro;
      @media screen and (max-width:767px){
-    
-        
-        border:none;
+     border:none;
      }
      
      @include box;
@@ -582,30 +562,19 @@ main{
         font-weight: 600;
         font-size:calc(12px + 0.5vw);
      }
-    
     }
 }
     .right{
         width: 50%;
-        
         @include box;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        .www{
-            display: flex;
-            
-            justify-content: space-between;
-        }
         p{
             color:#FD7858;
             font-family:'Lato';
             font-weight: 600;
             font-size:calc(12px + 0.5vw);
             margin-left:-4vw;
-        }
-       
     }
+}
 
 .aside{
     width: 22%;
@@ -642,22 +611,22 @@ display: flex;
 
 .aside-main{
     width: 100%;
-    
-    
     overflow-y: scroll;
         ul{ 
             width: 90%;
             list-style-type: none;
-            @media screen and (max-width: 720px){
+            @media screen and (max-width: 767px){
             width: 100%;
             }
         }
         li{
-            position: relative;
+            position: absolute;
             display: flex;
-            
             align-items: center;
             border-bottom: 1px solid rgb(199, 199, 199) ;
+         
+       
+    }
         p{
             font-size: calc(9px + 0.3vw);
             margin-left: 1vw;
@@ -677,14 +646,13 @@ display: flex;
 
             }
         } 
-}
+
  
 .aside-input{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-   
     input{
      margin-top:2.5vw;
      padding-left: 1vw;
@@ -697,10 +665,9 @@ display: flex;
      font-weight: 400;
      border-right: none;
      border-left: none;
-   
   }
- 
 }  
+
 .aside-footer{
     width: 100%;
     
@@ -719,12 +686,16 @@ display: flex;
         list-style-type: none;
     }
     li{
+        position: absolute;
         padding-bottom: 1.2vw;
         padding-right: 1vw;
-        @media screen and (max-width: 720px) {
+   
+       
+        @media screen and (max-width: 767px) {
             flex-wrap: wrap;
-         
      }
-        
     }
+    }
+    .company-first{
+       display: none; 
     }
