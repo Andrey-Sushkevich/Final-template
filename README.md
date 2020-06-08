@@ -2,3 +2,5 @@
 
 https://andrey-sushkevich.github.io/Final-template/. 
 
+rename images
+
