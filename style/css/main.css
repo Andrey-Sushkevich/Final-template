@@ -33,8 +33,6 @@
 .trianglesBigtop {
   border: 10px solid transparent;
   border-top: 10px solid #ff4400;
-  width: 0;
-  height: 0;
 }
 
 * {
@@ -103,6 +101,12 @@ body {
   cursor: pointer;
 }
 
+.navigation li:hover {
+  width: 60px;
+  height: 60px;
+  background-color: #46020b;
+}
+
 .navigation li a {
   font-size: calc( 6px + 0.3vw);
   color: #FFFFFF;
@@ -117,7 +121,7 @@ body {
 }
 
 .home {
-  background: url(../../img/header/home@1X.png) center center no-repeat;
+  background: url(../../img/header/home.png) center center no-repeat;
 }
 
 .statistics {
@@ -209,7 +213,7 @@ header {
   height: calc(60px + 0.6em);
   padding: 0;
   border: 0.5px solid #F1F1F1;
-  background: url(../../img/header/section_1.png) no-repeat center center;
+  background: url(../../img/header/section-1.png) no-repeat center center;
 }
 
 .header--nav .ellips:hover {
@@ -221,7 +225,7 @@ header {
   height: calc(60px + 0.6em);
   padding: 0;
   border: 0.5px solid #F1F1F1;
-  background: url(../../img/header/section_2.png) no-repeat center center;
+  background: url(../../img/header/section-2.png) no-repeat center center;
 }
 
 .header--nav .folder:hover {
@@ -233,7 +237,7 @@ header {
   height: calc(60px + 0.6em);
   padding: 0;
   border: 0.5px solid #F1F1F1;
-  background: url(../../img/header/section_3.png) no-repeat center center;
+  background: url(../../img/header/section-3.png) no-repeat center center;
 }
 
 .header--nav .upload:hover {
@@ -287,7 +291,7 @@ header {
   height: calc(60px + 0.6em);
   padding: 0;
   border: 0.5px solid #F1F1F1;
-  background: url(../../img/header/section_5.png) no-repeat center center;
+  background: url(../../img/header/section-5.png) no-repeat center center;
 }
 
 .header--nav--second .send:hover {
@@ -299,7 +303,7 @@ header {
   height: calc(60px + 0.6em);
   padding: 0;
   border: 0.5px solid #F1F1F1;
-  background: url(../../img/header/section_6.png) no-repeat center center;
+  background: url(../../img/header/section-6.png) no-repeat center center;
 }
 
 .header--nav--second .envelop:hover {
@@ -991,7 +995,7 @@ main {
 }
 
 .aside-header .users {
-  background: url(../../img/aside/users@1X.png) no-repeat center center;
+  background: url(../../img/aside/users.png) no-repeat center center;
   position: relative;
   width: 33.33%;
   height: calc(40px + 0.6em);
@@ -1004,7 +1008,7 @@ main {
 }
 
 .aside-header .chat {
-  background: url(../../img/aside/chat@1X.png) no-repeat center center;
+  background: url(../../img/aside/chat.png) no-repeat center center;
   position: relative;
   width: 33.33%;
   height: calc(40px + 0.6em);
@@ -1017,7 +1021,7 @@ main {
 }
 
 .aside-header .like {
-  background: url(../../img/aside/like@1X.png) no-repeat center center;
+  background: url(../../img/aside/like.png) no-repeat center center;
   position: relative;
   width: 33.33%;
   height: calc(40px + 0.6em);
@@ -1069,7 +1073,7 @@ main {
   width: 1.4vw;
   height: 1.1vw;
   margin-left: 4.5vw;
-  background: url(../../img/aside/chat@1X.png);
+  background: url(../../img/aside/chat.png);
   margin-top: 2.5vw;
   background-color: rgba(0, 0, 0, 0.3);
   border: none;
@@ -1135,9 +1139,5 @@ main {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-}
-
-.company-first {
-  background: url(../../img/aside/link-1.png) center center no repeat;
 }
 /*# sourceMappingURL=main.css.map */
