@@ -1,0 +1,153 @@
+header{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.header--top{
+    display: flex;
+    width: 100%;
+}
+
+.header--nav{
+    display: flex;
+    width: 20%;
+    align-items: center;
+  .ellips{
+    @include item;
+    background: url(../../img/header/section-1.png) no-repeat center center;
+}
+  .folder{
+    @include item;
+    background: url(../../img/header/section-2.png) no-repeat  center center;
+  }
+  .upload{
+    @include item;
+    background: url(../../img/header/section-3.png) no-repeat  center center;
+  }
+}
+.header--search{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    height: calc(60px + 1.2vw);
+    form{
+        padding-top: 1em;
+        position: relative;
+        width: 50%;
+    input{
+        width: 100%;
+        font-size: calc(8px + 0.2vw);
+        padding: 0.6vw;
+        border: 1px solid #EBEBEB;
+        border-radius: 20px;
+        background-color: #EBEBEB;
+        color: black;
+    }
+    img{
+        position: absolute;
+        left: calc(60px + 12vw);
+        bottom: calc( 15px + 1.5vw);
+    }
+}
+}
+.header--second{
+    display: flex;
+    width: 20%;
+    align-self: start;
+  .send{
+    @include item;
+    background: url(../../img/header/section-5.png) no-repeat center center;
+}
+  .envelop{
+    @include item;
+    background: url(../../img/header/section-6.png) no-repeat  center center;
+  }
+  .earth{
+    @include item;
+    background: url(../../img/header/planet.png) no-repeat  center center;
+  }
+}
+.lady{
+    display: flex;
+@media screen and (max-width: 560px) {
+    width: 100%; 
+    justify-content: space-around;  
+    }
+    img{
+        padding: 0;
+    }
+    p{
+        font-size: calc(9px + 0.3vw);
+        font-family:'lato';
+        color:red;
+        padding-left: 1.2vw;
+        font-weight: 700;
+    }
+    span{
+        font-size: calc(6px + 0.3vw);
+        font-family:'lato';
+        padding-left: 1.2vw;
+        color:#BFBFBF;
+        font-weight: 400;
+        }
+    }
+.Dots{
+    background: url(../../img/header/three-dots.png) no-repeat center center;
+    border: none;
+    &:hover{
+        background-color:greenyellow;
+    }     
+   }
+
+.header--bottom{
+    display: flex;
+    width: 100%;
+}
+
+.statistics{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+  
+    h4{
+        margin: 0;
+        padding-top: 1.5vw;
+        font-family: 'Lato';
+        font-size: calc( 8px + 0.3vw);
+        font-weight: 600;
+    }
+     p{
+        margin-top: 9px;
+        margin-bottom: 8px;
+        font-family: 'Lato';
+        font-size: calc(12px + 0.5vw);
+        font-weight: 600;
+        color: red;
+}
+    .statistics--number{
+        display: flex;
+        flex-direction: column; 
+}
+}
+
+.figure{
+    font-family: 'Lato';
+    font-size: calc( 8px + 0.3vw);
+    padding-left: 5px;
+    font-weight: 600;
+    color:#BFBFBF;
+    position: relative; 
+}
+.statistics :last-child p{
+    padding-top: 1.5vw;
+    font-size: calc( 8px + 0.3vw);
+}
+@media screen and (max-width:767px){
+    .statistics{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 1.3vw 2.6vw;
+    }
+}
